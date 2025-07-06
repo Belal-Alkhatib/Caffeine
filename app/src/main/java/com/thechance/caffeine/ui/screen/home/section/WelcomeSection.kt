@@ -47,7 +47,7 @@ import com.thechance.caffeine.ui.components.ProfileActionRow
 import com.thechance.caffeine.ui.screen.home.HomeInteraction
 import com.thechance.caffeine.ui.theme.Singlet
 
-private val SymmetricSlowInSlowOutEasing: Easing = CubicBezierEasing(0.42f, 0.0f, 0.58f, 1.0f)
+internal val SymmetricSlowInSlowOutEasing: Easing = CubicBezierEasing(0.42f, 0.0f, 0.58f, 1.0f)
 
 @Composable
 fun WelcomeSection(interaction: HomeInteraction, modifier: Modifier = Modifier) {

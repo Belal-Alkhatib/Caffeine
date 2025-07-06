@@ -2,4 +2,7 @@
     <string name="app_name">Caffeine</string>
     <string name="hocus_pocus_i_need_coffee_to_focus">Hocus \nPocus \nI Need Coffee \nto Focus</string>
     <string name="bring_my_coffee">bring my coffee</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="what_would_you_like_to_drink_today">What would you like to drink today?</string>
+    <string name="continue_to">Continue</string>
 </resources>

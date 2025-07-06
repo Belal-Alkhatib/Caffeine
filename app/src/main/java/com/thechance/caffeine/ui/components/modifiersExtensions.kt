@@ -1,7 +1,8 @@
 package com.thechance.caffeine.ui.components
 
-import android.R.attr.layoutDirection
 import android.graphics.BlurMaskFilter
+import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.pager.PagerState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.geometry.Size
@@ -40,4 +41,9 @@ fun Modifier.dropShadow(
         canvas.drawOutline(shadowOutline, paint)
         canvas.restore()
     }
+}
+
+@OptIn(ExperimentalFoundationApi::class)
+fun PagerState.calculateCurrentOffsetForPage(page: Int): Float {
+    return (currentPage - page) + currentPageOffsetFraction
 }

@@ -1,5 +1,6 @@
 package com.thechance.caffeine.ui.screen.home
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -11,7 +12,15 @@ class HomeViewModel(): ViewModel(), HomeInteraction {
 
     override fun onBringCoffeeClick() {
         //todo make bring coffee content visible also
-        _state.update { it.copy(isWelcomeContentVisible = false) }
+        _state.update { it.copy(isWelcomeContentVisible = false, isCoffeeSelectionContentVisible = true) }
+    }
+
+    override fun onContinueToPrepareCoffeeClick() {
+        _state.update { it.copy(isCoffeeSelectionContentVisible = false) }
+    }
+
+    override fun onSelectCoffeeChange(selectedCoffeeType: CoffeeType) {
+        _state.update { it.copy(selectedCoffeeType = selectedCoffeeType) }
     }
 
 }
