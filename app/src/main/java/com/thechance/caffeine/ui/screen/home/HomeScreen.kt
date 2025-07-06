@@ -1,6 +1,5 @@
 package com.thechance.caffeine.ui.screen.home
 
-import android.util.Log.v
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn

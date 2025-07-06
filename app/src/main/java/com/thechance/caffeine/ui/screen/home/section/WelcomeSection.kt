@@ -1,6 +1,5 @@
 package com.thechance.caffeine.ui.screen.home.section
 
-import android.R.attr.translationY
 import androidx.compose.animation.animateColor
 import androidx.compose.animation.core.CubicBezierEasing
 import androidx.compose.animation.core.Easing
