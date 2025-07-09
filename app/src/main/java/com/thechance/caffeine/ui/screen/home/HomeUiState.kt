@@ -4,11 +4,20 @@ data class HomeUiState(
     val isWelcomeContentVisible: Boolean = true,
 
     val isCoffeeSelectionContentVisible: Boolean = false,
+    val isCoffeeSelectorsVisible: Boolean = true,
     val coffeeTypes: List<CoffeeType> = CoffeeType.entries.toList(),
     val selectedCoffeeType: CoffeeType = CoffeeType.BLACK,
 
-    val coffeeSize: CoffeeSize = CoffeeSize.SMALL,
-    val coffeeStrength: CoffeeStrength = CoffeeStrength.LOW,
+    val isCoffeeCustomizationContentVisible: Boolean = false,
+    val selectedCoffeeCupSize: CoffeeCupSize = CoffeeCupSize.SMALL,
+    val selectedCoffeeStrength: CoffeeStrength = CoffeeStrength.LOW,
+    val isAnotherStrengthSelected: Boolean = false,
+
+    val lastSelectedStrength: CoffeeStrength? = null,
+    val isStrengthAnimationVisible: Boolean = false,
+    val coffeeStrengthAnimationState: CoffeeStrengthAnimationState = CoffeeStrengthAnimationState.NONE,
+
+
     )
 
 enum class CoffeeType {
@@ -18,7 +27,7 @@ enum class CoffeeType {
     MACCHIATO
 }
 
-enum class CoffeeSize{
+enum class CoffeeCupSize{
     SMALL,
     MEDIUM,
     LARGE
@@ -29,4 +38,9 @@ enum class CoffeeStrength{
     MEDIUM,
     HIGH
 }
+
+enum class CoffeeStrengthAnimationState {
+    NONE, ENTERING, EXITING
+}
+
 

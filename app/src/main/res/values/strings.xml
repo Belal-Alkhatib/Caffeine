@@ -5,4 +5,7 @@
     <string name="good_morning">Good Morning</string>
     <string name="what_would_you_like_to_drink_today">What would you like to drink today?</string>
     <string name="continue_to">Continue</string>
+    <string name="_150_ml">150 ML</string>
+    <string name="_200_ml">200 ML</string>
+    <string name="_400_ml">400 ML</string>
 </resources>

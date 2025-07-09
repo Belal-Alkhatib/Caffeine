@@ -3,6 +3,7 @@ package com.thechance.caffeine.ui.components
 import android.graphics.BlurMaskFilter
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.pager.PagerState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.geometry.Size
@@ -15,10 +16,10 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
 fun Modifier.dropShadow(
-    shape: Shape,
     color: Color,
+    shape: Shape = CircleShape,
     blur: Dp = 4.dp,
-    offsetY: Dp = 4.dp,
+    offsetY: Dp = 6.dp,
     offsetX: Dp = 0.dp,
     spread: Dp = 0.dp,
 ) = this.drawBehind {

@@ -53,9 +53,7 @@ fun PrimaryButton(
         modifier = modifier
             .height(56.dp)
             .dropShadow(
-                shape = CircleShape,
                 color = Color.Black.copy(alpha = shadowColorAlpha),
-                offsetY = 6.dp,
                 blur = 12.dp
             )
             .background(color = Color(0xFF1F1F1F), shape = CircleShape)

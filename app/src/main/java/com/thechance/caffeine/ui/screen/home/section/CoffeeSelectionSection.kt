@@ -147,7 +147,7 @@ private fun CoffeeTypePager(
         )
 
         val textScale by animateFloatAsState(
-            targetValue = if (pagerState.currentPage == coffeeTypeIndex) 1f else 0.75f,
+            targetValue = if (pagerState.currentPage == coffeeTypeIndex) 1f else 0.66f,
             animationSpec = spring(
                 dampingRatio = Spring.DampingRatioLowBouncy,
                 stiffness = Spring.StiffnessLow
